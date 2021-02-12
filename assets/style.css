@@ -2,15 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(../assets/images/Space.PNG) ;
-    background-size: cover;
-    background-position: 100%;
-    background-attachment: scroll;
 }
 :root {
     --primary-color: #d1b3ff;
-    --secondary-color: ;
-    --tertiary-color: ;
+    --secondary-color: #c299ff;
+    --tertiary-color: #0a001a;
 }
 
 header {
@@ -29,9 +25,7 @@ header {
     z-index: 9999;
 }
 header h1 {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    font-family: "Courier New (monospace)";
-    font-style: italic;
+    text-shadow: 3px 3px 3px #0a001a ;
     font-weight: normal;
     font-size: 36px;
     color: var(--primary-color);
@@ -39,7 +33,7 @@ header h1 {
 }
 header a {
     text-decoration: none;
-    color: #d1b3ff;
+    color: var(--primary-color);
 }
 header nav {
     margin: 7px 0;
@@ -52,8 +46,8 @@ header nav ul {
     list-style: none;
 }
 header nav ul li a:hover {
-    background: #c299ff ;
-    color: #0a001a;
+    background: var(--secondary-color) ;
+    color: var(--tertiary-color);
     border-radius: 15px;
     text-shadow: none;
 }
@@ -66,6 +60,63 @@ header nav ul li a {
 body {
     color: var(--primary-color);
     font-family: "Courier New (monospace)";
+    background-image: url(../assets/images/Space.PNG) ;
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: scroll;
+}
+.font-effect-neon h2 {
+    font-weight:bolder;
+    color: #1f004d;
+}
+section {
+margin: 50px auto;
+padding-bottom: 50px;
+border-bottom: 1px solid var(--tertiary-color);
+width: 90%;
+display: flex;
+flex-wrap: wrap;
+flex-basis: auto;
+align-items: center;
+justify-content: space-between;
+}
+.about {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.selfie {
+    height: 50px;
+    align-content: space-around;
+}
+.projects, .art, .js, .run-buddy, .game {
+ width:150px;
+height:150px;
+border:1px solid black;
+ display:flex;
+flex-wrap:wrap;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+.contact-info h3 {
+    color: var(--primary-color);
+    font-size: 32px;
+}
+
+.contact-info p, {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
 }
 .fa {
     padding: 20px;

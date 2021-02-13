@@ -76,20 +76,24 @@ border-bottom: 1px solid var(--tertiary-color);
 width: 90%;
 display: flex;
 flex-wrap: wrap;
-flex-basis: auto;
-align-items: center;
+flex-direction: column;
 justify-content: space-between;
 }
-.about {
-    width: 100%;
+article {
+    flex: 200px;
+    flex: 1;
+}
+.info p {
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    align-content: right;
+    justify-content:space-evenly;
+    margin: 20px;
 }
 .selfie {
-    height: 50px;
-    align-content: space-around;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
 }
 .projects, .art, .js, .run-buddy, .game {
  width:150px;
@@ -98,6 +102,10 @@ border:1px solid black;
  display:flex;
 flex-wrap:wrap;
 }
+.work div {
+    column-count:4;
+}
+
 .contact-info {
     display: flex;
     justify-content: space-between;

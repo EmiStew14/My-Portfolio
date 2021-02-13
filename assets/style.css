@@ -94,14 +94,16 @@ article {
     justify-content:space-evenly;
 }
 .projects, .art, .js, .run-buddy, .game {
- width:150px;
-height:150px;
-border:1px solid black;
+ width:350px;
+height:350px;
+text-align: center;
  display:flex;
 flex-wrap:wrap;
 }
 .work div {
-    column-count:4;
+    column-count:2;
+    padding: 10px;
+    display:flex;
 }
 
 .contact-info {
@@ -170,16 +172,21 @@ li:hover {
     background: #ffffe6;
     color: black;
   }
+.fa-github {
+    color:cornsilk;
+    width: 100px;
+}
 .material-icons {
     background: #ffffe6;
     color: black;
 }
 
   footer {
-    background: ;
+    background: #001a33;
     width: 100%;
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-display:inherit;
 }

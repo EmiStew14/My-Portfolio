@@ -12,6 +12,19 @@
                 font-family: "Audiowide", sans-serif;
                 text-shadow: 3px 3px 3px #0a001a ;
                 }
+            img {
+                border: 2px solid #ddd; /* Gray border */
+                border-radius: 4px;  /* Rounded border */
+                padding: 5px; /* Some padding */
+                width: 300px; /* Set a small width */
+                display:flex;
+                flex-direction: column;
+                align-items: baseline;
+                }
+                /* Add a hover effect (blue shadow) */
+            .projects img:hover {
+                box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+                }
         </style>
     <title>Emily Stewart Portfolio</title>
     
@@ -71,18 +84,33 @@
 
         <div class="projects">
             <div class="flex-row">
+
                 <div class="art">
-                    <a href="https://www.deviantart.com/konan-akatsuki-xxx">Artwork</a>
+                    <h4>Artwork</h4>
+                        <a target="_blank" href="https://www.instagram.com/_queenblacksheep_/">
+                            <img src="assets/images/thumbnail1.jpg" alt="Art id">
+                        </a>
                 </div>
-            
+                <br>
                 <div class="js">
-                    <a href="/">JavaScript</a>
+                    <h4>Javascript</h4>
+                        <a target="_blank" href="https://github.com/EmiStew14/robot-gladiators">
+                            <img src="assets/images/thumbnail2.jpg" alt="Javascript thumbnail">
+                        </a>
                 </div>
+                <br>
                 <div class="run-buddy">
-                    <a href="/">Run Buddy</a>
+                    <h4>Run Buddy</h4>
+                        <a target="_blank" href="https://github.com/EmiStew14/run-buddy">
+                            <img src="assets/images/thumbnail4.jpg" alt="Run thumbnail">
+                        </a>
                 </div>
+                <br>
                 <div class="game">
-                    <a href="/">Games</a>
+                    <h4>Games</h4>
+                        <a target="_blank" href="/">
+                            <img src="assets/images/thumbnail3.jpg" alt="TBA thumbnail">
+                        </a>
                 </div>
             </div>
         </div>
@@ -112,7 +140,7 @@
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
                         <!-- Add font awesome icons -->
-                        <a href="https://www.instagram.com/_queenblacksheep_/" class="fa fa-instagram"></a>
+                        <a href="https://www.instagram.com/ehmurlee96/" class="fa fa-instagram"></a>
                     </li>
                     <li>
                         <a href="mailto:stewartemilym2014@gmail.com"> <i class="material-icons">computer</i></a>
@@ -126,7 +154,10 @@
         </div>
     </section>
     <footer>
-
+        <p>
+            &#127756; Thank you for visiting! More to come soon! &#127756;
+            <a href="https://github.com/EmiStew14"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </p>
     </footer>
   </body>
 </html>

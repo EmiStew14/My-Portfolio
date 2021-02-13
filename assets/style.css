@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 :root {
     --primary-color: #d1b3ff;
@@ -72,7 +71,6 @@ body {
 section {
 margin: 50px auto;
 padding-bottom: 50px;
-border-bottom: 1px solid var(--tertiary-color);
 width: 90%;
 display: flex;
 flex-wrap: wrap;
@@ -80,20 +78,20 @@ flex-direction: column;
 justify-content: space-between;
 }
 article {
-    flex: 200px;
+    flex-direction: row;
+    flex: 600px;
     flex: 1;
-}
-.info p {
-    margin: 0 auto;
-    display: flex;
-    align-content: right;
-    justify-content:space-evenly;
-    margin: 20px;
+    padding: 10px;
 }
 .selfie {
     width: 200px;
     height: 300px;
-    object-fit: cover;
+}
+.info p {
+    padding: 10px;
+    flex: 50$;
+    align-content: center;
+    justify-content:space-evenly;
 }
 .projects, .art, .js, .run-buddy, .game {
  width:150px;
@@ -126,7 +124,34 @@ flex-wrap:wrap;
     font-size: 16px;
     font-style: normal;
 }
-.fa {
+
+.contact-info ul {
+list-style: none outside;
+  }
+  
+.contact-info li {
+list-style: none;
+}
+  
+  
+li:hover {
+    color:var(--secondary-color);
+    font-weight: 900;
+    list-style-type: none;
+    text-shadow: 2px 2px blueviolet;
+  }
+  
+  /* Adds a potato emoji to the list item */
+  li::before {
+    content: '🪐';
+  }
+  
+  /* Changes the potato to a heart */
+  li:hover::before {
+    content: '✨';
+  }
+  
+.fa, .material-icons {
     padding: 20px;
     font-size: 30px;
     width: 30px;
@@ -145,6 +170,10 @@ flex-wrap:wrap;
     background: #ffffe6;
     color: black;
   }
+.material-icons {
+    background: #ffffe6;
+    color: black;
+}
 
   footer {
     background: ;

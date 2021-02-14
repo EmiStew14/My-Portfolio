@@ -15,9 +15,8 @@ header {
     background-image: url(../assets/images/Space.PNG);
     background-size: cover;
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: auto;
     padding: 20px 35px;
-    background-color: ;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -61,7 +60,7 @@ body {
     font-family: "Courier New (monospace)";
     background-image: url(../assets/images/Space.PNG) ;
     background-size: cover;
-    background-position: 100%;
+    background-position: auto;
     background-attachment: scroll;
 }
 .font-effect-neon h2 {
@@ -69,12 +68,12 @@ body {
     color: #1f004d;
 }
 section {
-margin: 50px auto;
-padding-bottom: 50px;
-width: 90%;
+margin: 100px auto;
+width: 100%;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
+columns: 2 200px;
 justify-content: space-between;
 }
 article {
@@ -89,23 +88,23 @@ article {
 }
 .info p {
     padding: 10px;
-    flex: 50$;
+    flex: 50%;
     align-content: center;
     justify-content:space-evenly;
 }
-.projects, .art, .js, .run-buddy, .game {
- width:350px;
-height:350px;
+.img-fluid {
+ width: 200px;
+height: 200px;
 text-align: center;
  display:flex;
 flex-wrap:wrap;
 }
-.work div {
-    column-count:2;
+.projects .flex-row {
+    margin: auto;
+    column-count: 2;
+    column-width: 350px;
     padding: 10px;
-    display:flex;
 }
-
 .contact-info {
     display: flex;
     justify-content: space-between;
@@ -120,11 +119,11 @@ flex-wrap:wrap;
     font-size: 32px;
 }
 
-.contact-info p, {
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 16px;
-    font-style: normal;
+.contact-info p {
+    margin:20px 0;
+    line-height:1.5;
+    font-size:16px;
+    font-style:normal;
 }
 
 .contact-info ul {
@@ -181,12 +180,120 @@ li:hover {
     color: black;
 }
 
-  footer {
+footer {
     background: #001a33;
     width: 100%;
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-display:inherit;
+}
+footer p {
+    line-height: 1.5;
+    text-align: center;
+    align-items: center;
+}
+.flex-row {
+    display: flex;
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+    .about {
+        text-align: center;
+    }
+    .selfie {
+        width: 60%;
+        align-items: center;
+      }
+      .section-title {
+        width: 80%;
+      }
+      
+      .img-fluid {
+        flex: 0 10%;
+      }
+      
+      .contact {
+        flex: 1 90%;
+      }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    .about-me {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+      }
+    section {
+      padding: 30px 15px;
+    }
+    .about-me h2 {
+        flex: 1 100%;
+        text-align: center;
+      }
+      .selfie {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .info {
+        flex: 100%;  
+      }
+    }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header, body {
+          padding: auto;
+    }
+    header nav ul {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+      }
+    .section-title {
+          width: 95%;
+    }
+      
+    .about p {
+          width: 100%;
+    }
+      
+    .img-fluid {
+          flex: 0 100%;
+    }
+      
+    .contact {
+          text-align: center;
+    }
+      
+        .contact > * {
+          flex: 0 100%;
+        }
+    }
 }

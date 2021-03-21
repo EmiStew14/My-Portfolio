@@ -19,9 +19,9 @@
 
   <body class="text-light">
       <!--Navigation-->
-    <header>
-        <div>
-        <h1> Welcome To Emily's Workshop!</h1>
+    <header class="row justify-content-center">
+        <div class="col-auto">
+        <h1 class="text-center"> Welcome To Emily's Workshop!</h1>
         </div>
 
         <nav>
@@ -42,66 +42,83 @@
             </ul>
         </nav>
     </header>
-    <section id="about-me" class="about">
-        <div class="flex-row">
-            <h2 class="font-effect-neon col-auto text-center">
+    <section id="about-me" class="about row">
+        <div class="col-auto">
+            <h2 class="font-effect-neon text-center">
                 About Me
             </h2>
         </div>
-            <img id="Me" class="img-thumbnail h-25 w-25" src="./assets/images/Selfie.jpeg" style="width:100%" />
+        <div id="info" class="row justify-content-center">
+            <div class="col-auto">
+            <img id="Me" class="img-thumbnail img-fluid h-75 w-50 rounded mx-auto d-block" src="/assets/images/Selfie2.jpg" style="width:100%" />
+            <div class="row">
+             <div class="col-12">
+                <h4 class="text-center p-3"> Areas of Experience:</h4>
+             </div>
+            </div>
 
-            <div id="info" class="flex-row mb-0">
-                <p class="col-auto">
+             <div class="flex-wrap col-auto text-center">
+            <button id="btn-1" class="font-effect-neon rounded"data-toggle="popover" data-placement="top" data-content="Beginner (less than a year)">HTML</button>
+            <button id="btn-2" class="font-effect-neon rounded"data-toggle="popover" data-placement="bottom" data-content="Beginner (less than a year)">CSS</button>
+            <button id="btn-3" class="font-effect-neon rounded"data-toggle="popover" data-placement="left" data-content="Beginner (less than a year)">Bootstrap</button>
+            <button id="btn-4" class="font-effect-neon rounded"data-toggle="popover" data-placement="right" data-content="Beginner (less than a year)">JavaScript</button>
+            <button id="btn-5" class="font-effect-neon rounded"data-toggle="popover" data-placement="bottom" data-content="Beginner (less than a year)">Procreate</button>
+            <button id="btn-6" class="font-effect-neon rounded"data-toggle="popover" data-placement="top" data-content="Beginner (1.5 years)">ClipStudio</button>
+            </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-9 p-1">
+                <p class="text-bold p-3">
                     My name is Emily M. Stewart, I am 24 years old and currently live in Tucson, AZ. I was born in California and raised in Alabama for a majority of my life. I was raised in a very diverse family and growing family, now consiting of 5 siblings along with my dad and step-mom. 
                     I joined the United States Airforce as a Weapons Load Crew member after I turned 18, I have now been enlisted for 6 years but do not plan on making it a career. I have traveled to over 15 states and 4 different countries, got stationed in South Korea and now Arizona. 
                     I am currently studying for my associates in Video Game Simulation and Design with a concentration of programming but I hope to transfer my credits over and persue my Bachelors in Computer Science.Some hobbies of mine include drawing/creating concept art and comics, working out, swimming, and playing video games. 
                     I am a huge fan of Science fiction, Fantasy, Superhero, and Horror genres, essentially anything that can get my brain wondering I tend to gravitate towards that.
                 </p>
+                </div>
             </div>
+        </div>
     </section>
 
-    <section id="my-work" class="work row">
+    <section id="my-work" class="work row p-3">
         <div class="col-auto">
             <h2 class="font-effect-neon text-center">
                 My Work
             </h2>
         </div>
 
-        <div class="projects row align-items-start">
+        <div class="projects row justify-content-center p-3">
                     <div class="media col-auto mx-auto">
                         <a target="_blank" href="https://www.instagram.com/_queenblacksheep_/">
-                            <img src="assets/images/thumbnail1.jpg" class="img-thumbnail">
+                            <img src="assets/images/thumbnail1.jpg" class="img-thumbnail" data-toggle="tooltip" data-placement="right" title="Go directly to my art Insta page">
                         </a>
                       <div class="media-body col-auto mx-auto">
                         <h5 class="mt-0 mb-1">Artwork</h5>
                       </div>
                     </div>
-        </div>
-        <div class="row align-items-start">
+
                     <div class="media col-auto mx-auto">
-                        <a target="_blank" href="https://github.com/EmiStew14/Planetarium-Party">
-                            <img src="assets/images/OIP.jfif" class="img-thumbnail">
+                        <a target="_blank" href=" https://emistew14.github.io/Planetarium-Party/">
+                            <img src="assets/images/OIP.jfif" class="img-thumbnail" data-toggle="tooltip" data-placement="right" title="My collaborative project with APIs">
                         </a>
                     <div class="media-body col-auto mx-auto">
                     <h5 class="mt-0 mb-1">Planetarium Party</h5>
-                        <p>Click to see a collaborative project using third party API's!</p>
                     </div>
                     </div>
         </div>
-        <div class="row align-items-start">
+        <div class="row">
                     <div class="media col-auto mx-auto">
-                        <a target="_blank" href="https://github.com/EmiStew14/run-buddy">
-                            <img src="assets/images/thumbnail5.jpg" class="img-thumbnail">
+                        <a target="_blank" href=" https://emistew14.github.io/run-buddy/">
+                            <img src="assets/images/thumbnail5.jpg" class="img-thumbnail" data-toggle="tooltip" data-placement="right" title="A sample fitness page">
                         </a>
                       <div class="media-body col-auto mx-auto">
                         <h5 class="mt-0 mb-1">Run Buddy</h5>
-                      Click to see a sample workout site
                       </div>
                     </div>
             </div>
     </section>
 
-    <section id="contact-me" class="contact row">
+    <section id="contact-me" class="contact row align-items-center">
         <div class="col-auto">
             <h2 class="font-effect-neon col-auto text-center">
                 Contact Me
@@ -112,25 +129,29 @@
                         If you would like to reach me, here are some contact points!
                     </p>
         </div>
-        <div class="row align-content-center"> 
-                   <div class="col-3">
+        <div class="row"> 
+            <div class="col-auto">
+                   <div class="col-12 text-center">
                         <a href="https://twitter.com/_queenblackshee?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @_queenblackshee</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
-                   <div class="col-3">
+                   <div class="col-12 text-center">
                         <a href="https://www.instagram.com/ehmurlee96/" class="fa fa-instagram"></a>
                     </div>
-                   <div class="col-3">
-                        <a href="mailto:stewartemilym2014@gmail.com"> <i class="material-icons">computer</i></a>
+                   <div class="col-12 text-center">
+                        <a href="mailto:stewartemilym2014@gmail.com"> <i class="material-icons align-content-center">computer</i></a>
                     </div>
-                   <div class="col-3">
+                   <div class="col-12 text-center">
                         Cell: (334)782-0025
                    </div>
+                   <div class="col-12 text-center">
+                    <a href="https://github.com/EmiStew14"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
         <p>
             &#127756; Thank you for visiting! More to come soon! &#127756;
-            <a href="https://github.com/EmiStew14"><i class="fa fa-github" aria-hidden="true"></i></a>
         </p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #d1b3ff;
+    --secondary-color: #c299ff;
+    --tertiary-color: #0a001a;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url(../assets/images/Space.PNG);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: auto;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 9999;
+}
+header h1 {
+    text-shadow: 3px 3px 3px #0a001a ;
+    font-weight: normal;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+}
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a:hover {
+    background: var(--secondary-color) ;
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+header nav ul li a {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+body {
+    color: var(--primary-color);
+    font-family: "Courier New (monospace)";
+    background-image: url(../assets/images/Space.PNG) ;
+    background-size: cover;
+    background-position: auto;
+    background-attachment: scroll;
+}
+.font-effect-neon h2 {
+    font-weight:bolder;
+    color: #1f004d;
+}
+section {
+margin: 100px auto;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+columns: 2 200px;
+justify-content: space-between;
+}
+article {
+    flex-direction: row;
+    flex: 600px;
+    flex: 1;
+    padding: 10px;
+}
+.selfie {
+    width: 200px;
+    height: 300px;
+}
+.info p {
+    padding: 10px;
+    flex: 50%;
+    align-content: center;
+    justify-content:space-evenly;
+}
+.img-fluid {
+ width: 200px;
+height: 200px;
+text-align: center;
+ display:flex;
+flex-wrap:wrap;
+}
+.projects .flex-row {
+    margin: auto;
+    column-count: 2;
+    column-width: 350px;
+    padding: 10px;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+.contact-info h3 {
+    color: var(--primary-color);
+    font-size: 32px;
+}
+
+.contact-info p {
+    margin:20px 0;
+    line-height:1.5;
+    font-size:16px;
+    font-style:normal;
+}
+
+.contact-info ul {
+list-style: none outside;
+  }
+  
+.contact-info li {
+list-style: none;
+}
+  
+  
+li:hover {
+    color:var(--secondary-color);
+    font-weight: 900;
+    list-style-type: none;
+    text-shadow: 2px 2px blueviolet;
+  }
+  
+  /* Adds a potato emoji to the list item */
+  li::before {
+    content: '🪐';
+  }
+  
+  /* Changes the potato to a heart */
+  li:hover::before {
+    content: '✨';
+  }
+  
+.fa, .material-icons {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  .fa-instagram{
+    background: #ffffe6;
+    color: black;
+  }
+.fa-github {
+    color:cornsilk;
+    width: 100px;
+}
+.material-icons {
+    background: #ffffe6;
+    color: black;
+}
+
+footer {
+    background: #001a33;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer p {
+    line-height: 1.5;
+    text-align: center;
+    align-items: center;
+}
+.flex-row {
+    display: flex;
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+    .about {
+        text-align: center;
+    }
+    .selfie {
+        width: 60%;
+        align-items: center;
+      }
+      .section-title {
+        width: 80%;
+      }
+      
+      .img-fluid {
+        flex: 0 10%;
+      }
+      
+      .contact {
+        flex: 1 90%;
+      }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    .about-me {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+      }
+    section {
+      padding: 30px 15px;
+    }
+    .about-me h2 {
+        flex: 1 100%;
+        text-align: center;
+      }
+      .selfie {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .info {
+        flex: 100%;  
+      }
+    }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header, body {
+          padding: auto;
+    }
+    header nav ul {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+      }
+    .section-title {
+          width: 95%;
+    }
+      
+    .about p {
+          width: 100%;
+    }
+      
+    .img-fluid {
+          flex: 0 100%;
+    }
+      
+    .contact {
+          text-align: center;
+    }
+      
+        .contact > * {
+          flex: 0 100%;
+        }
+    }
+}

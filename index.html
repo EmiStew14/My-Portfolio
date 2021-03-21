@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html lang="eng">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <style>
-            body {
-                font-family: "Audiowide", sans-serif;
-                text-shadow: 3px 3px 3px #0a001a ;
-                }
-            img {
-                border: 2px solid #ddd; /* Gray border */
-                border-radius: 4px;  /* Rounded border */
-                padding: 5px; /* Some padding */
-                width: 280px; /* Set a small width */
-                display:flex;
-                flex-direction: column;
-                align-items: center;
-                }
-                /* Add a hover effect (blue shadow) */
-            .projects img:hover {
-                box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
-                }
-        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <title>Emily Stewart Portfolio</title>
     
   </head>
 
-  <body>
+  <body class="text-light">
       <!--Navigation-->
     <header>
         <div>
@@ -57,16 +44,14 @@
     </header>
     <section id="about-me" class="about">
         <div class="flex-row">
-            <h2 class="font-effect-neon">
+            <h2 class="font-effect-neon col-auto text-center">
                 About Me
             </h2>
         </div>
-        <article class="selfie">
-            <img class="Me" src="./assets/images/Selfie.jpeg" style="width:100%" />
-        </article>
+            <img id="Me" class="img-thumbnail h-25 w-25" src="./assets/images/Selfie.jpeg" style="width:100%" />
 
-            <div class="info">
-                <p>
+            <div id="info" class="flex-row mb-0">
+                <p class="col-auto">
                     My name is Emily M. Stewart, I am 24 years old and currently live in Tucson, AZ. I was born in California and raised in Alabama for a majority of my life. I was raised in a very diverse family and growing family, now consiting of 5 siblings along with my dad and step-mom. 
                     I joined the United States Airforce as a Weapons Load Crew member after I turned 18, I have now been enlisted for 6 years but do not plan on making it a career. I have traveled to over 15 states and 4 different countries, got stationed in South Korea and now Arizona. 
                     I am currently studying for my associates in Video Game Simulation and Design with a concentration of programming but I hope to transfer my credits over and persue my Bachelors in Computer Science.Some hobbies of mine include drawing/creating concept art and comics, working out, swimming, and playing video games. 
@@ -75,73 +60,71 @@
             </div>
     </section>
 
-    <section id="my-work" class="work">
-        <div class="flex-row">
-            <h2 class="font-effect-neon">
+    <section id="my-work" class="work row">
+        <div class="col-auto">
+            <h2 class="font-effect-neon text-center">
                 My Work
             </h2>
         </div>
 
-        <div class="projects">
-            <div class="flex-row">
-
-                <div class="art">
-                    <h4>Artwork</h4>
+        <div class="projects row align-items-start">
+                    <div class="media col-auto mx-auto">
                         <a target="_blank" href="https://www.instagram.com/_queenblacksheep_/">
-                            <img src="assets/images/thumbnail1.jpg" class="img-fluid">
+                            <img src="assets/images/thumbnail1.jpg" class="img-thumbnail">
                         </a>
-                </div>
-                <div class="js">
-                    <h4>Javascript</h4>
-                        <a target="_blank" href="https://github.com/EmiStew14/robot-gladiators">
-                            <img src="assets/images/thumbnail2.jpg" class="img-fluid">
-                        </a>
-                </div>
-                <div class="run-buddy">
-                    <h4>Run Buddy</h4>
-                        <a target="_blank" href="https://github.com/EmiStew14/run-buddy">
-                            <img src="assets/images/thumbnail4.jpg" class="img-fluid">
-                        </a>
-                </div>
-            </div>
+                      <div class="media-body col-auto mx-auto">
+                        <h5 class="mt-0 mb-1">Artwork</h5>
+                      </div>
+                    </div>
         </div>
+        <div class="row align-items-start">
+                    <div class="media col-auto mx-auto">
+                        <a target="_blank" href="https://github.com/EmiStew14/Planetarium-Party">
+                            <img src="assets/images/OIP.jfif" class="img-thumbnail">
+                        </a>
+                    <div class="media-body col-auto mx-auto">
+                    <h5 class="mt-0 mb-1">Planetarium Party</h5>
+                        <p>Click to see a collaborative project using third party API's!</p>
+                    </div>
+                    </div>
+        </div>
+        <div class="row align-items-start">
+                    <div class="media col-auto mx-auto">
+                        <a target="_blank" href="https://github.com/EmiStew14/run-buddy">
+                            <img src="assets/images/thumbnail5.jpg" class="img-thumbnail">
+                        </a>
+                      <div class="media-body col-auto mx-auto">
+                        <h5 class="mt-0 mb-1">Run Buddy</h5>
+                      Click to see a sample workout site
+                      </div>
+                    </div>
+            </div>
     </section>
 
-    <section id="contact-me" class="contact">
-        <div class="flex-row">
-            <h2 class="font-effect-neon">
-                How to Contact Me
+    <section id="contact-me" class="contact row">
+        <div class="col-auto">
+            <h2 class="font-effect-neon col-auto text-center">
+                Contact Me
             </h2>
         </div>
-        <div class="contact-info">
-            <div>
-                <br>
-                    <p>
+        <div class="contact-info row">
+                    <p class="col-12 text-center">
                         If you would like to reach me, here are some contact points!
                     </p>
-                </br>
-           
-            <nav>
-                <ul>
-                    <li>
+        </div>
+        <div class="row align-content-center"> 
+                   <div class="col-3">
                         <a href="https://twitter.com/_queenblackshee?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @_queenblackshee</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </li>
-                    <li>
-                        <!-- Add icon library -->
-                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-                        <!-- Add font awesome icons -->
+                    </div>
+                   <div class="col-3">
                         <a href="https://www.instagram.com/ehmurlee96/" class="fa fa-instagram"></a>
-                    </li>
-                    <li>
+                    </div>
+                   <div class="col-3">
                         <a href="mailto:stewartemilym2014@gmail.com"> <i class="material-icons">computer</i></a>
-                    </li>
-                    <li>
+                    </div>
+                   <div class="col-3">
                         Cell: (334)782-0025
-                    </li>
-                </ul>
-            </nav>
-            </div>
+                   </div>
         </div>
     </section>
     <footer>
@@ -150,5 +133,11 @@
             <a href="https://github.com/EmiStew14"><i class="fa fa-github" aria-hidden="true"></i></a>
         </p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/homepage.js"></script>
   </body>
 </html>

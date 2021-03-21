@@ -86,13 +86,8 @@ article {
     width: 200px;
     height: 300px;
 }
-.info p {
-    padding: 10px;
-    flex: 50%;
-    align-content: center;
-    justify-content:space-evenly;
-}
-.img-fluid {
+
+.img-thumbnail {
  width: 200px;
 height: 200px;
 text-align: center;
@@ -222,9 +217,6 @@ footer p {
       text-align: center;
       width: 100%;
     }
-    .about {
-        text-align: center;
-    }
     .selfie {
         width: 60%;
         align-items: center;
@@ -233,7 +225,7 @@ footer p {
         width: 80%;
       }
       
-      .img-fluid {
+      .img-thumbnail {
         flex: 0 10%;
       }
       
@@ -243,7 +235,7 @@ footer p {
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
-    .about-me {
+    #about-me {
         flex: 2 100%;
         text-align: center;
         justify-content: center;
@@ -251,7 +243,7 @@ footer p {
     section {
       padding: 30px 15px;
     }
-    .about-me h2 {
+    #about-me h2 {
         flex: 1 100%;
         text-align: center;
       }
@@ -284,7 +276,7 @@ footer p {
           width: 100%;
     }
       
-    .img-fluid {
+    .img-thumbnail {
           flex: 0 100%;
     }
       

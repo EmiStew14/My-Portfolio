@@ -33,6 +33,8 @@
  * HTML
  * CSS
  * Javascript
+ * Node
+ * Express
 
   ## License:
     MIT

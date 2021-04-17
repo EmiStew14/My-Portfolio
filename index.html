@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
 
 
     <title>Emily Stewart Portfolio</title>
@@ -28,7 +28,7 @@
         <!--Unordered list-->
             <ul>
                 <li>
-                    <a href= "#about-me">About Me</a>
+                    <a href= "./aboutme.html">About Me</a>
                 </li>
                 <li>
                     <a href= "#my-work">My Work</a>
@@ -42,80 +42,82 @@
             </ul>
         </nav>
     </header>
-    <section id="about-me" class="about row">
-        <div class="col-auto">
-            <h2 class="font-effect-neon text-center">
-                About Me
-            </h2>
-        </div>
-        <div id="info" class="row justify-content-center">
+        <div id="info" class="row justify-content-center ">
             <div class="col-auto">
-            <img id="Me" class="img-thumbnail img-fluid h-75 w-50 rounded mx-auto d-block" src="/assets/images/Selfie2.jpg" style="width:100%" />
-            <div class="row">
-             <div class="col-12">
-                <h4 class="text-center p-3"> Areas of Experience:</h4>
-             </div>
+            <img id="Me" class="img-thumbnail img-fluid h-75 w-50 rounded bg-dark p-auto mx-auto d-block" src="assets/images/Selfie2.jpg" style="width:100%" />
+            <div>
+                <h1 class="text-center"> An Inspiring Full Stack Developer</h1>
             </div>
-
-             <div class="flex-wrap col-auto text-center">
-            <button id="btn-1" class="font-effect-neon rounded"data-toggle="popover" data-placement="top" data-content="Beginner (less than a year)">HTML</button>
-            <button id="btn-2" class="font-effect-neon rounded"data-toggle="popover" data-placement="bottom" data-content="Beginner (less than a year)">CSS</button>
-            <button id="btn-3" class="font-effect-neon rounded"data-toggle="popover" data-placement="left" data-content="Beginner (less than a year)">Bootstrap</button>
-            <button id="btn-4" class="font-effect-neon rounded"data-toggle="popover" data-placement="right" data-content="Beginner (less than a year)">JavaScript</button>
-            <button id="btn-5" class="font-effect-neon rounded"data-toggle="popover" data-placement="bottom" data-content="Beginner (less than a year)">Procreate</button>
-            <button id="btn-6" class="font-effect-neon rounded"data-toggle="popover" data-placement="top" data-content="Beginner (1.5 years)">ClipStudio</button>
-            </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-9 p-1">
-                <p class="text-bold p-3">
-                    My name is Emily M. Stewart, I am 24 years old and currently live in Tucson, AZ. I was born in California and raised in Alabama for a majority of my life. I was raised in a very diverse family and growing family, now consiting of 5 siblings along with my dad and step-mom. 
-                    I joined the United States Airforce as a Weapons Load Crew member after I turned 18, I have now been enlisted for 6 years but do not plan on making it a career. I have traveled to over 15 states and 4 different countries, got stationed in South Korea and now Arizona. 
-                    I am currently studying for my associates in Video Game Simulation and Design with a concentration of programming but I hope to transfer my credits over and persue my Bachelors in Computer Science.Some hobbies of mine include drawing/creating concept art and comics, working out, swimming, and playing video games. 
-                    I am a huge fan of Science fiction, Fantasy, Superhero, and Horror genres, essentially anything that can get my brain wondering I tend to gravitate towards that.
-                </p>
-                </div>
             </div>
         </div>
-    </section>
 
-    <section id="my-work" class="work row p-3">
+    <section id="my-work" class="work row p-auto">
         <div class="col-auto">
             <h2 class="font-effect-neon text-center">
                 My Work
             </h2>
+            <p class="text-center">(Hover for a quick overview on the projects)</p>
         </div>
 
         <div class="projects row justify-content-center p-3">
-                    <div class="media col-auto mx-auto">
+                    <div class="media col-auto mx-auto p-3">
                         <a target="_blank" href="https://www.instagram.com/_queenblacksheep_/">
                             <img src="assets/images/thumbnail1.jpg" class="img-thumbnail" data-toggle="tooltip" data-placement="right" title="Go directly to my art Insta page">
                         </a>
                       <div class="media-body col-auto mx-auto">
-                        <h5 class="mt-0 mb-1">Artwork</h5>
+                        <h5 class="font-effect-neon mt-0 mb-1">Artwork</h5>
                       </div>
                     </div>
 
-                    <div class="media col-auto mx-auto">
+                    <div class="media col-auto mx-auto p-3">
                         <a target="_blank" href=" https://emistew14.github.io/Planetarium-Party/">
                             <img src="assets/images/OIP.jfif" class="img-thumbnail" data-toggle="tooltip" data-placement="right" title="My collaborative project with APIs">
                         </a>
                     <div class="media-body col-auto mx-auto">
-                    <h5 class="mt-0 mb-1">Planetarium Party</h5>
+                    <h5 class="font-effect-neon mt-0 mb-1">Planetarium Party</h5>
                     </div>
                     </div>
-        </div>
-        <div class="row">
+        <div class="row p-3">
                     <div class="media col-auto mx-auto">
                         <a target="_blank" href=" https://emistew14.github.io/run-buddy/">
                             <img src="assets/images/thumbnail5.jpg" class="img-thumbnail" data-toggle="tooltip" data-placement="right" title="A sample fitness page">
                         </a>
                       <div class="media-body col-auto mx-auto">
-                        <h5 class="mt-0 mb-1">Run Buddy</h5>
+                        <h5 class="font-effect-neon mt-0 mb-1">Run Buddy</h5>
                       </div>
                     </div>
             </div>
+            <div class="row p-3">
+                <div class="media col-auto mx-auto">
+                    <a target="_blank" href=" https://emistew14.github.io/whats-the-weather-like/">
+                        <img src="assets/images/weather.jfif" class="img-thumbnail" data-toggle="tooltip" data-placement="right" title="Using API calls to display the weather! Also saves to Local Storage">
+                    </a>
+                  <div class="media-body col-auto mx-auto">
+                    <h5 class="font-effect-neon mt-0 mb-1">Weather Dashboard</h5>
+                  </div>
+                </div>
+        </div>
+        <div class="row p-3">
+            <div class="media col-auto mx-auto">
+                <a target="_blank" href="https://github.com/EmiStew14/make-it-professional.git">
+                    <img src="assets/images/ReadMe.png" class="img-thumbnail" data-toggle="tooltip" data-placement="right" title="A Node based ReadMe generator">
+                </a>
+              <div class="media-body col-auto mx-auto">
+                <h5 class="font-effect-neon mt-0 mb-1">Readme Generator</h5>
+              </div>
+            </div>
+    </div>
+    <div class="row p-3">
+        <div class="media col-auto mx-auto">
+            <a target="_blank" href="https://github.com/EmiStew14/manage-your-people.git">
+                <img src="assets/images/team.jfif" class="img-thumbnail" data-toggle="tooltip" data-placement="right" title="OOP Team builder">
+            </a>
+          <div class="media-body col-auto mx-auto">
+            <h5 class="font-effect-neon mt-0 mb-1">Team Building Roster</h5>
+          </div>
+        </div>
+</div>
+</div>
     </section>
 
     <section id="contact-me" class="contact row align-items-center">
@@ -129,27 +131,27 @@
                         If you would like to reach me, here are some contact points!
                     </p>
         </div>
-        <div class="row"> 
+        <div class="row p-3"> 
             <div class="col-auto">
-                   <div class="col-12 text-center">
+                   <div class="col-12 text-center p-3">
                         <a href="https://twitter.com/_queenblackshee?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @_queenblackshee</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
-                   <div class="col-12 text-center">
+                   <div class="col-12 text-center p-3">
                         <a href="https://www.instagram.com/ehmurlee96/" class="fa fa-instagram"></a>
                     </div>
-                   <div class="col-12 text-center">
-                        <a href="mailto:stewartemilym2014@gmail.com"> <i class="material-icons align-content-center">computer</i></a>
+                   <div class="col-12 text-center p-3">
+                        <a href="mailto:stewartemilym2014@gmail.com"> <i class="material-icons">computer</i></a>
                     </div>
-                   <div class="col-12 text-center">
+                   <div class="col-12 text-center p-3">
                         Cell: (334)782-0025
                    </div>
-                   <div class="col-12 text-center">
+                   <div class="col-12 text-center p-3">
                     <a href="https://github.com/EmiStew14"><i class="fa fa-github" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="justify-content-center">
         <p>
             &#127756; Thank you for visiting! More to come soon! &#127756;
         </p>

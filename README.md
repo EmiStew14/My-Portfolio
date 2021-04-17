@@ -25,8 +25,9 @@
 
   ## Usage:
   A website that portrays my background and experience
-  ![My Portfolio](https://user-images.githubusercontent.com/77601180/111925157-e77ca380-8a64-11eb-8fce-9a252d8b79a1.png)
-![My Portfolio2](https://user-images.githubusercontent.com/77601180/111925194-0d09ad00-8a65-11eb-9bdb-44fc87894053.png)
+![My Portfolio](https://user-images.githubusercontent.com/77601180/115129343-de1a2480-9f99-11eb-9907-2263487ab0ec.png)
+![My Portfolio2](https://user-images.githubusercontent.com/77601180/115129346-e3776f00-9f99-11eb-905a-b0f571439a27.png)
+
   
   ## Languages used:
  * HTML

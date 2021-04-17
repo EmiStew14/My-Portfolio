@@ -20,6 +20,7 @@
   
 
   ## Website:
+  Deployed Site here( https://emily-coding-portfolio.herokuapp.com/index.html )
  ( https://emistew14.github.io/My-Portfolio/ )
 
   ## Usage:

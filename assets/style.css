@@ -63,6 +63,9 @@ body {
     background-position: auto;
     background-attachment: scroll;
 }
+h1, p {
+  color: var(--primary-color)
+}
 .font-effect-neon h2 {
     font-weight:bolder;
     color: #1f004d;
